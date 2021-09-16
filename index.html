@@ -1,14 +1,178 @@
 <!DOCTYPE html>
-<html lang="ㅏㅐ">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="LSJ"> <!--Website description-->
     <meta name="author" content="LSJ"> <!--Developer description-->
+    <link rel="icon" href="imgs/coffee_icon.png">
+    <script src="https://kit.fontawesome.com/b3ff0b2f81.js"
+    crossorigin="anonymous"></script>
     <title>LSJ</title>
 </head>
 <body>
-    <!--이것은 주석입니다. 보이지 않습니다.-->
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar_logo">
+            <i class="fab fa-diaspora"></i>
+            <a href="#">LSJ</a>
+        </div>
+        <ul class="navbar_menu">
+            <li class="Navbar_menu_item">Home</li>
+            <li class="Navbar_menu_item">About</li>
+            <li class="Navbar_menu_item">Skills</li>
+            <li class="Navbar_menu_item">My works</li>
+            <li class="Navbar_menu_item">Testimonials</li>
+            <li class="Navbar_menu_item">Contact</li>
+        </ul>
+    </nav>
+    <!-- home -->
+    <section id="home">
+        <img src="imgs/coffee_bg.png" alt="profile img" class="home_avatar">
+        <h1 class="home_title">ISJ</h1>
+        <h2 class="home_description">
+            hello, nice to meet you!
+        </h2>
+        <button class="home_contact">Contact me!</button>
+    </section>
+    <!-- about -->
+    <section id="about">
+        <h1>About me</h1>
+        <p>
+            I like baking & coding!
+        </p>
+        <div class="about_majors">
+            <!-- First major -->
+            <div class="major">
+                <div class="major_icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h2 class="major_title">
+                    Front-end
+                </h2>
+                <div class="major_description">
+                    HTML, CSS, JavaScript, TypeScript,<br/>React, Vue, Web APIs
+                </div>
+            </div>
+            <!-- Second Major -->
+            <div class="major">
+                <div class="major_icon">
+                    <i class="fas fa-mobile"></i>
+                </div>
+                <h2 class="major_title">
+                    Mobile
+                </h2>
+                <div class="major_description">
+                    Android, iOS, React Native, Flutter,<br/>Java, Swift, Kotlin
+                </div>
+            </div>
+            <!-- Third Major -->
+            <div class="major">
+                <div class="major_icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h2 class="major_title">
+                    Back-end
+                </h2>
+                <div class="major_description">
+                    Java, JavaScript, Go, NodeJS,<br/>Rest APIs, GraphGL
+                </div>
+            </div>
+        </div>
+        <div class="about_jobs">
+            <div class="job">
+                <img src="imgs/jobs/bucheon_university_logo.png" alt="bcu" class="job_logo">
+                <div class="job_description">
+                    <p class="job_name">I am currently attending Bucheon University.</p>
+                    <p class="job_peroid">Entrance in 2021 ~ Graduation in 2024</p>
+                </div>
+            </div>
+            <div class="job">
+                <img src="imgs/jobs/bucheon_university_logo.png" alt="bcu" class="job_logo">
+                <div class="job_description">
+                    <p class="job_name">I am currently attending Bucheon University.</p>
+                    <p class="job_peroid">Entrance in 2021 ~ Graduation in 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills -->
+    <section id="skills">
+        <div class="section_container">
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>
+                I am interested in learning new things and enjoy planning. I can do a good job of coordination opinions.
+            </p>
+            <!-- skillset -->
+            <div class="skillset">
+                <div class="skillset_left">
+                    <h3 class="skillset_title">Skills</h3>
+                    <!-- skill bars (descriptions) -->
+                    <div class="skill_description">
+                        <span>HTML</span> <span>99%</span>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width: 99%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill_description">
+                        <span>CSS</span> <span>90%</span>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill_description">
+                        <span>JavaScript</span> <span>90%</span>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill_description">
+                        <span>TypeScript</span> <span>80%</span>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill_description">
+                        <span>React</span> <span>88%</span>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width: 88%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill_description">
+                        <span>NodeJS</span> <span>77%</span>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width: 77%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset_right">
+                    <div class="tools">
+                        <h3 class="skillset_title">Tools</h3>
+                        <ul class="tools list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>IntelliJ</span></li>
+                            <li><span>Android Studio Code</span></li>
+                            <li><span>iOS development tools</span></li>
+                            <li><span>Sketch apps</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset_title">Etc</h3>
+                        <li><span>Git</span></li>
+                        <li><span>Scrum master</span></li>
+                        <li><span>Math</span></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- work -->
+    <section id="work"></section>
+    <!-- testimonials -->
+    <section id="testimonials"></section>
+    <!-- contact -->
+    <section id="contact"></section>
 </body>
 </html>
