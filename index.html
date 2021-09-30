@@ -9,6 +9,7 @@
     <link rel="icon" href="imgs/coffee_icon.png">
     <script src="https://kit.fontawesome.com/b3ff0b2f81.js"
     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
     <title>LSJ</title>
 </head>
 <body>
@@ -19,17 +20,17 @@
             <a href="#">LSJ</a>
         </div>
         <ul class="navbar_menu">
-            <li class="Navbar_menu_item">Home</li>
-            <li class="Navbar_menu_item">About</li>
-            <li class="Navbar_menu_item">Skills</li>
-            <li class="Navbar_menu_item">My works</li>
-            <li class="Navbar_menu_item">Testimonials</li>
-            <li class="Navbar_menu_item">Contact</li>
+            <li class="navbar_menu_item active">Home</li>
+            <li class="navbar_menu_item">About</li>
+            <li class="navbar_menu_item">Skills</li>
+            <li class="navbar_menu_item">My works</li>
+            <li class="navbar_menu_item">Testimonials</li>
+            <li class="navbar_menu_item">Contact</li>
         </ul>
     </nav>
     <!-- home -->
     <section id="home">
-        <img src="imgs/coffee_bg.png" alt="profile img" class="home_avatar">
+        <img src="imgs/coffee_icon.png" alt="profile img" class="home_avatar">
         <h1 class="home_title">ISJ</h1>
         <h2 class="home_description">
             hello, nice to meet you!
@@ -37,7 +38,7 @@
         <button class="home_contact">Contact me!</button>
     </section>
     <!-- about -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About me</h1>
         <p>
             I like baking & coding!
@@ -98,7 +99,7 @@
         </div>
     </section>
     <!-- skills -->
-    <section id="skills">
+    <section id="skills" class="section">
         <div class="section_container">
             <h1>Skills</h1>
             <h2>Skills & Attributes</h2>
@@ -110,38 +111,56 @@
                 <div class="skillset_left">
                     <h3 class="skillset_title">Skills</h3>
                     <!-- skill bars (descriptions) -->
-                    <div class="skill_description">
-                        <span>HTML</span> <span>99%</span>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
                         <div class="skill_bar">
                             <div class="skill_value" style="width: 99%;"></div>
                         </div>
                     </div>
-                    <div class="skill_description">
-                        <span>CSS</span> <span>90%</span>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
                         <div class="skill_bar">
                             <div class="skill_value" style="width: 90%;"></div>
                         </div>
                     </div>
-                    <div class="skill_description">
-                        <span>JavaScript</span> <span>90%</span>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
                         <div class="skill_bar">
                             <div class="skill_value" style="width: 90%;"></div>
                         </div>
                     </div>
-                    <div class="skill_description">
-                        <span>TypeScript</span> <span>80%</span>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>TypeScript</span>
+                            <span>80%</span>
+                        </div>
                         <div class="skill_bar">
                             <div class="skill_value" style="width: 80%;"></div>
                         </div>
                     </div>
-                    <div class="skill_description">
-                        <span>React</span> <span>88%</span>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>React</span>
+                            <span>88%</span>
+                        </div>
                         <div class="skill_bar">
                             <div class="skill_value" style="width: 88%;"></div>
                         </div>
                     </div>
-                    <div class="skill_description">
-                        <span>NodeJS</span> <span>77%</span>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>NodeJS</span>
+                            <span>77%</span>
+                        </div>
                         <div class="skill_bar">
                             <div class="skill_value" style="width: 77%;"></div>
                         </div>
@@ -169,7 +188,7 @@
         </div>
     </section>
     <!-- work -->
-    <section id="work">
+    <section id="work" class="section">
         <div class="section_container">
             <h1>My work</h1>
             <h3>Projects</h3>
@@ -240,7 +259,7 @@
         </div>
     </section>
     <!-- testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
         <div class="section_container">
             <h1>Testimonials</h1>
             <h3>See what they say about me</h3>
@@ -263,7 +282,7 @@
         </div>
     </section>
     <!-- contact -->
-    <section id="contact">
+    <section id="contact" class="section">
         <h1 class="contact_title">Let's talk</h1>
         <h2 class="contact_email">bleotop@naver.com</h3>
         <div class="contact_links">
