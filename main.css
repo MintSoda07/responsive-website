@@ -84,11 +84,19 @@
 
 /* Navbar */
 #navbar{
-    background-color: var(--color-light-green);
+    background-color: transparent;
+    width: 100%;
     display:flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px;
+    position: fixed;
+    transition: all 200ms ease-in-out;
+}
+#navbar.navbar--dark{
+    background-color: var(--color-light-green);
+    padding:4px;
+    transition: all 200ms ease;
 }
 .navbar_logo{
     font-size: var(--font-medium);
@@ -112,12 +120,20 @@
     background-color: var(--color-green);
     border-radius: var(--size-border-radius);
 }
-
+.navbar_toggle_btn{
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    font-size: 24px;
+    color: var(--color-white);
+    display: none;
+}
 /*Home*/
 #home{
     background: url(/imgs/coffee_bg.png) center no-repeat;
     padding: 40px;
     text-align: center;
+    padding-top: 120px;
 }
 
 .home_avatar{
@@ -509,6 +525,9 @@
     .skill{
         flex-direction: column;
     }
+    .skillset {
+        flex-direction: column;
+    }
     .category_btn{
         margin: 4px 0;
         width: 100%;
@@ -523,5 +542,8 @@
         line-height: 50px;
         right: 16px;
         bottom: 16px;
+    }
+    .navbar_toggle_btn{
+        display: block;
     }
 }
