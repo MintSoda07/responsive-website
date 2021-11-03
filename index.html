@@ -21,15 +21,15 @@
             <a href="#">LSJ</a>
         </div>
         <ul class="navbar_menu" id="navbar_menu">
-            <li class="navbar_menu_item active">Home</li>
-            <li class="navbar_menu_item active">About</li>
-            <li class="navbar_menu_item active">Skills</li>
-            <li class="navbar_menu_item active">My works</li>
-            <li class="navbar_menu_item active">Testimonials</li>
-            <li class="navbar_menu_item active">Contact</li>
+            <li class="navbar_menu_item" data-link="#home">Home</li>
+            <li class="navbar_menu_item" data-link="#about">About</li>
+            <li class="navbar_menu_item" data-link="#skills">Skills</li>
+            <li class="navbar_menu_item" data-link="#work">My works</li>
+            <li class="navbar_menu_item" data-link="#testimonials">Testimonials</li>
+            <li class="navbar_menu_item" data-link="#contact">Contact</li>
         </ul>
         <!-- toggle button -->
-        <button class="navbar_toggle_btn">
+        <button class="navbar_toggle_btn" >
             <i class="fas fa-bars"></i>
         </button>
     </nav>
@@ -41,7 +41,7 @@
         <h2 class="home_description">
             hello, nice to meet you!
         </h2>
-        <button class="home_contact">Contact me!</button>
+        <button class="home_contact" data-link="#contact">Contact me!</button>
     </section>
     <!-- about -->
     <section id="about" class="section">
@@ -199,7 +199,7 @@
             <h1>My work</h1>
             <h3>Projects</h3>
             <div class="work_categories">
-                <button class="category_btn" data-filter="*">All <span class="category_count">8</span></button>
+                <button class="category_btn selected" data-filter="*">All <span class="category_count">8</span></button>
                 <button class="category_btn" data-filter="front-end">Front-end <span class="category_count">3</span></button>
                 <button class="category_btn" data-filter="back-end">Back-end <span class="category_count">3</span></button>
                 <button class="category_btn" data-filter="mobile">Mobile <span class="category_count">2</span></button>
@@ -304,7 +304,7 @@
         </p>
     </section>
     <!-- Arrow up-->
-    <button class="arrow-up">
+    <button class="arrow-up" data-link="#home">
         <i class="fas fa-arrow-up"></i>
     </button>        
 </body>
