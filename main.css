@@ -112,18 +112,20 @@
     margin:0 4px ;
     color: var(--color-white);
     cursor: pointer;
+    border: 1px solid transparent;
 }
 .navbar_menu_item:hover{
     background-color: var(--color-green);
     border-radius: var(--size-border-radius);
+    border: 1px solid var(--color-white);
 }
 .navbar_toggle_btn{
     position: absolute;
-  top: 24px;
-  right: 32px;
-  font-size: 24px;
-  color: var(--color-white);
-  display: none;
+    top: 24px;
+    right: 32px;
+    font-size: 12px;
+    color: var(--color-white);
+    display: none;
 }
 /*Home*/
 #home{
@@ -458,12 +460,6 @@
     opacity: 1;
 }
 
-.navbar_toggle_btn{
-    color: var(--color-white);
-    font-size: var(--font-medium);
-    right: 16px;
-    display: none;
-}
 /* For below 768px Screen width */
 @media screen and (max-width:768px) {
     /* Font size*/
@@ -544,8 +540,5 @@
         line-height: 50px;
         right: 16px;
         bottom: 16px;
-    }
-    .navbar_toggle_btn{
-        display: block;
     }
 }

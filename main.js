@@ -12,7 +12,7 @@ document.addEventListener("scroll",()=>{
     }else{
         navbar.classList.add('navbar--dark');
     }
-    if(window.scrollY<navbarHeight+75){
+    if(window.scrollY<navbarHeight+125){
         arrowUp.classList.remove('arrow--status');
     }else{
         arrowUp.classList.add('arrow--status');
@@ -36,9 +36,24 @@ function scrollClickAction_scrollMove(event){
     if(link==null){
         return;
     }
+    navbarMenu.classList.remove("open");
     scrollIntoView(link);
-}
+};
 function scrollIntoView(selector){
     const scrollTo=document.querySelector(selector);
     scrollTo.scrollIntoView({behavior:"smooth"});
 };
+
+//home opacity management
+const home=document.querySelector(".home_container");
+const homeHeight=home.getBoundingClientRect().height;
+document.addEventListener("scroll",()=>{
+    home.style.opacity=1-scrollY/homeHeight;
+});
+
+//navbar expand menu click action
+const navbarToggleBtn=document.querySelector('.navbar_toggle_btn');
+navbarToggleBtn.addEventListener("click",()=>{
+    console.log("Clicked!");
+    navbarMenu.classList.toggle("open");
+});
