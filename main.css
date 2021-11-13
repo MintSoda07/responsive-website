@@ -470,12 +470,18 @@
         --font-small: 14px;
         --font-micro: 12px;
     }
+    #home{
+        background-size: 100% 100%;
+    }
     .navbar_toggle_btn{
         display: block;
-        top:4px;
+        top: 20px;
         right: 16px;
         font-size: var(--font-medium);
-        bottom: 2px;
+        transition: all 200ms ease;
+    }
+    .navbar_toggle_btn.resize{
+        top: 10px;
     }
 
     #navbar{

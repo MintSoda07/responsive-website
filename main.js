@@ -12,8 +12,10 @@ const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener("scroll",()=>{
     if(window.scrollY<navbarHeight){
         navbar.classList.remove('navbar--dark');
+        navbarToggleBtn.classList.remove('resize');
     }else{
         navbar.classList.add('navbar--dark');
+        navbarToggleBtn.classList.add('resize');
     }
     if(window.scrollY<1){
         arrowUp.classList.remove('arrow--status');
