@@ -129,7 +129,7 @@
 }
 /*Home*/
 #home{
-    background: url(/imgs/coffee_bg.png) center no-repeat;
+    background: url(./imgs/coffee_bg.png) center no-repeat;
     padding: 40px;
     text-align: center;
     padding-top: 120px;

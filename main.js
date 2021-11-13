@@ -15,7 +15,7 @@ document.addEventListener("scroll",()=>{
     }else{
         navbar.classList.add('navbar--dark');
     }
-    if(window.scrollY==0){
+    if(window.scrollY<1){
         arrowUp.classList.remove('arrow--status');
     }
     if(window.scrollY>homeBGHight/2){
