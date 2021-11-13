@@ -3,8 +3,11 @@ window.onload=function(){
 
 }
 'use strict';
-const arrowUp=document.querySelector(".arrow-up");
+
 const navbar = document.querySelector('#navbar');
+const homebackground = document.querySelector('#home');
+const homeBGHight = homebackground.getBoundingClientRect().height;
+const arrowUp=document.querySelector(".arrow-up");
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener("scroll",()=>{
     if(window.scrollY<navbarHeight){
@@ -12,9 +15,10 @@ document.addEventListener("scroll",()=>{
     }else{
         navbar.classList.add('navbar--dark');
     }
-    if(window.scrollY<navbarHeight+125){
+    if(window.scrollY==0){
         arrowUp.classList.remove('arrow--status');
-    }else{
+    }
+    if(window.scrollY>homeBGHight/2){
         arrowUp.classList.add('arrow--status');
     }
 });
@@ -51,9 +55,12 @@ document.addEventListener("scroll",()=>{
     home.style.opacity=1-scrollY/homeHeight;
 });
 
+
+//another NavMenu const :: id 
+const navbarMenuID=document.querySelector("#navbar_menu")
 //navbar expand menu click action
 const navbarToggleBtn=document.querySelector('.navbar_toggle_btn');
 navbarToggleBtn.addEventListener("click",()=>{
     console.log("Clicked!");
-    navbarMenu.classList.toggle("open");
+    navbarMenuID.classList.toggle("open");
 });

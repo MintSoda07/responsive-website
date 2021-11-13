@@ -489,7 +489,7 @@
         width: 100%;
         display: none;
     }
-    .navbar_menu.open{
+    #navbar_menu.open{
         display: block;
     }
     .section{
