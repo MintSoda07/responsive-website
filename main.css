@@ -86,14 +86,19 @@
 /* Navbar */
 #navbar{
     background-color: transparent;
+    margin-top: 0px;
     width: 100%;
     display:flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px;
     position: fixed;
-    transition: all 200ms ease-in-out;
-    z-index: 8
+    transition: all 300ms ease-in-out;
+    z-index: 8;
+}
+#navbar.anim{
+    margin-top: 0px;
+    transform: translateY(-500px);
 }
 #navbar.navbar--dark{
     background-color: var(--color-light-green);
@@ -104,6 +109,7 @@
     font-size: var(--font-medium);
     color: var(--color-white);
     font-weight: var(--weight-bold);
+    cursor:default;
 }
 .navbar_menu{
     display: flex;
@@ -114,6 +120,7 @@
     color: var(--color-white);
     cursor: pointer;
     border: 1px solid transparent;
+    transition: all var(--animation-duration) ease;
 }
 .navbar_menu_item:hover{
     background-color: var(--color-green);
@@ -141,7 +148,10 @@
     height: 250px;
     border-radius: 50%;
     border: 2px solid var(--color-black);
+    transition: all 200ms ease;
+    background-color: rgba(0, 0, 0, 0.4);
 }
+
 
 .home_title,
 .home_description{
@@ -185,6 +195,12 @@
     display: flex;
     justify-content: space-between;
     margin: 80px 0;
+}
+.major{
+    transition: all var(--animation-duration) ease;
+}
+.major:hover{
+    transform: scale(1.1);
 }
 
 .major_icon{
@@ -451,7 +467,7 @@
 
 .contact_links i:hover{
     transform: scale(1.1);
-    transition: all var(--animation-duration) ease-in;
+    transition: all var(--animation-duration) ease;
     color: var(--color-dark-grey);
 }
 
@@ -469,6 +485,7 @@
     transition: all 400ms ease;
     transform: rotateX(180deg);
 }
+
 .arrow-up.arrow--status{
     transform: rotateX(0deg);
     opacity: 1;
@@ -490,27 +507,33 @@
     }
     .navbar_toggle_btn{
         display: block;
-        top: 20px;
+        top: 12px;
         right: 16px;
         font-size: var(--font-medium);
         transition: all 200ms ease;
+        border-radius: 50%;
+        padding: 8px;
     }
     .navbar_toggle_btn.resize{
-        top: 10px;
+        top: 5px;
     }
 
     #navbar{
         flex-direction: column;
         align-items: flex-start;
-        background-color: var(--color-light-green);
+        background-color: rgba(133, 218, 131, 0.2);
     }
-    #navbar_menu{
+    #navbar.navbar--dark{
+        padding:10px;
+    }
+    .navbar_menu{
         flex-direction: column;
         text-align: center;
         width: 100%;
         display: none;
     }
-    #navbar_menu.open{
+
+    .navbar_menu.open{
         display: block;
     }
     .section{
