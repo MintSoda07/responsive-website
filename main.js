@@ -51,7 +51,11 @@ function scrollClickAction_scrollMove(event){
     if(link==null){
         return;
     }
-    navbarMenu.classList.remove("open");
+    navbar.classList.add("anim")
+    setTimeout(() => {
+        navbarMenu.classList.remove("open");
+        navbar.classList.remove("anim");
+    }, 600);
     scrollIntoView(link);
 };
 function scrollIntoView(selector){
@@ -69,7 +73,6 @@ document.addEventListener("scroll",()=>{
 //navbar expand menu click action
 const navbarToggleBtn=document.querySelector('.navbar_toggle_btn');
 navbarToggleBtn.addEventListener("click",()=>{
-    console.log("Clicked!");
     navbar.classList.add("anim")
     setTimeout(() => {
         navbarMenu.classList.toggle("open");
